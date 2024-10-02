@@ -1,0 +1,629 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container-menu,
+.container-specials,
+.wrapper-main {
+    margin: 0 auto;
+    width: 50%;
+}
+
+h1 {
+    font-family: "Alkatra", cursive;
+    font-size: 6rem;
+    font-weight: 400;
+
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+
+}
+
+h3 {
+    color: #aaa;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+    text-transform: uppercase;
+}
+
+h4 {
+    color: #777777;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+
+
+}
+
+.main-description {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+}
+
+.container-main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/main.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 43.7rem;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    justify-content: center;
+    padding-top: 250px;
+}
+
+
+
+/* Второй модуль */
+
+.container-specials {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+.specials-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.specials-description {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+
+}
+
+hr {
+    border-color: #d43031;
+    /* border-style: none; - без него полоска толще */
+    border-top-style: double;
+    width: 3rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.menu-item {
+    width: 18rem;
+}
+
+.box-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.specials-box p {
+    padding-top: 2rem;
+    line-height: 1.4;
+    text-align: center;
+    color: #777777;
+}
+
+.specials-box {
+    display: grid;
+    grid-template-columns: repeat(3, 295px);
+    grid-template-rows: 1fr;
+    gap: 0.5rem;
+
+}
+
+
+/* Третий модуль */
+
+/* .wrapper-story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #F6F6F6;
+}
+
+.story-img {
+    width: 900px;
+    background-size: cover;
+}
+
+.story-body {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.story-body p {
+    width: 40%;
+    line-height: 1.4;
+    color: #777777;
+    margin-top: 1.5rem;
+} */
+
+
+
+
+/* Третий модуль - тренируюсь */
+.story-image {
+    background-image: url(../images/restaurant.jpg);
+    background-size: cover;
+
+    /* 
+   Пока делаешь блок, чтобы увидеть фото нужно задать height. И width, чтобы не на всю ширину было
+   Потом это нужно удалить.
+*/
+    /* height: 400px;
+   width: 600px; */
+}
+
+/* 
+Только после display: grid можно увидеть background-image: url(../images/restaurant.jpg); 
+*/
+.wrapper-story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 480px;
+    /* В px не будет уменьшаться фото при уменьшении экрана. С 1fr будет уменьшение фото*/
+    background-color: #F6F6F6;
+}
+
+.story-body {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.story-body p {
+    width: 40%;
+    line-height: 1.4;
+    color: #777777;
+    margin-top: 1.5rem;
+}
+
+
+
+
+
+
+
+
+/* Четвертый модуль */
+
+.menu-description {
+
+    text-align: center;
+}
+
+.container-menu hr {
+    margin: 0 auto;
+}
+
+
+
+.menu-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+}
+
+.wrapper-menu {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+
+}
+
+.main-course p,
+.breackfast p {
+    margin: 1.5rem 0;
+    color: #777777;
+    font-size: 1rem;
+}
+
+.main-course hr,
+.breackfast hr {
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+
+
+.main-course {
+    margin-left: 2rem;
+}
+
+.item {
+    list-style-type: none;
+}
+
+.price {
+    font-size: 1.3rem;
+}
+
+.item-course span {
+    font-size: 1.25rem;
+    color: #444;
+}
+
+
+
+
+/* Пятый модуль */
+
+.container-scrolling {
+    margin-bottom: 10rem;
+}
+
+
+
+/* Скролинг. В гугле нашел */
+
+/* .scrolling {
+    margin: 0 auto;
+    height: 25rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.scrolling img {
+    width: 40rem;
+    height: 25rem;
+} */
+
+
+
+
+/* Грид */
+
+.container-galery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    overflow-x: scroll;
+}
+
+.galery-style {
+    height: 300px;
+    width: 500px;
+}
+
+.wrappers-crolling {
+    margin-bottom: 10rem;
+}
+
+
+
+/* Шестой модуль */
+
+
+.wrappers-cheef {
+    margin-bottom: 10rem;
+}
+
+.cheef-img {
+    height: 400px;
+    width: 600px;
+}
+
+.cheef-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cheef-left p {
+    width: 40%;
+    line-height: 1.4;
+    color: #777777;
+    margin-top: 1.5rem;
+}
+
+.container-cheef {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+
+}
+
+
+
+/* Седьмой модуль */
+
+
+.wrappers-contacts {
+    background-color: #333;
+}
+
+.container-contacts {
+    height: 550px;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+}
+
+.contacts-hours,
+.contacts-address,
+.contacts-reservation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 0 auto;
+    gap: 1rem;
+    width: 800px;
+}
+
+.section-contacts>div>p {
+    color: #777777;
+    padding: 1rem 0 0.4rem 0;
+}
+
+
+
+/* Форма */
+
+.wrapper-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wrapper-form h3 {
+    margin-top: 5rem;
+}
+
+.wrapper-form hr {
+    margin-bottom: 2rem;
+}
+
+.section-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+
+/* Форма БЕЗ активной кнопки */
+/* .form-mail,
+.form-name {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 0px;
+    padding: 5px 12px;
+    line-height: 1.5;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+
+.form-textarea {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 12px;
+    border: 0;
+    line-height: 1.5;
+    font-size: 1rem;
+    color: #ccc;
+    width: 90%;
+}
+
+.btn {
+    background-color: #333;
+    color: #777;
+    text-transform: uppercase;
+    font-family: Georgia, serif;
+    font-size: 1.2rem;
+    border: solid #777 2px;
+    padding: 13px 20px;
+} */
+
+
+
+/* Форма с активной кнопкой */
+.input-form {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 0px;
+    padding: 5px 12px;
+    line-height: 1.5;
+    font-size: 1rem;
+    color: #ccc;
+
+}
+
+.input-area {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 12px;
+    border: 0;
+    line-height: 1.5;
+    font-size: 1rem;
+    color: #ccc;
+    width: 90%;
+}
+
+.btn-form {
+    background-color: #333;
+    color: #777;
+    text-transform: uppercase;
+    font-family: Georgia, serif;
+    font-size: 1.2rem;
+    border: solid #777 2px;
+    padding: 13px 20px;
+}
+
+.btn-form:hover {
+    background-color: #777;
+    color: #333;
+    padding: 13px 20px;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Восьмой блок */
+
+.wrapper-footer {
+    background-color: #262626;
+    padding: 4rem 4rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.footer-content span {
+    color: #777;
+    line-height: 1.5;
+}
+
+.footer-content ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-content ul li {
+    list-style: none;
+    color: #777;
+
+}
+
+.footer-content>ul>li>a {
+    text-decoration: none;
+    color: #777;
+}
+
+.footer-content>ul>li>a:hover {
+    color: white;
+}
+
+
+@media (max-width: 900px) {
+    .specials-box {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 0.5rem;
+
+    }
+
+    .story-image {
+        background-image: none;
+        display: none;
+        /*убрали блок с фото*/
+    }
+
+    .wrapper-story {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 480px;
+        background-color: #F6F6F6;
+    }
+
+    .story-body p {
+        width: 80%;
+        line-height: 1.4;
+        color: #777777;
+        margin-top: 1.5rem;
+    }
+
+    .cheef-img {
+        background-image: none;
+        display: none;
+        /*убрали блок с фото*/
+    }
+
+    .cheef-left p {
+        width: 80%;
+        line-height: 1.4;
+        color: #777777;
+        margin-top: 1.5rem;
+    }
+
+    .container-cheef {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .section-contacts {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin: 0 auto;
+        gap: 1rem;
+        width: 800px;
+    }
+
+    .container-contacts {
+        height: 900px;
+        /* padding-top: 6rem;
+        padding-bottom: 5rem; */
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .footer-content span {
+        color: #777;
+        line-height: 1.5;
+        padding-top: 2rem;
+    }
+
+
+}
